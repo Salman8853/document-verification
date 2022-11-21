@@ -1,0 +1,58 @@
+.login-container{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1066%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c869.672C170.125%2c895.612%2c357.603%2c874.147%2c496.368%2c772.364C632.805%2c672.289%2c678.933%2c494.791%2c730.708%2c333.703C777.425%2c188.353%2c788.497%2c40.227%2c780.691%2c-112.246C772.174%2c-278.611%2c806.474%2c-479.928%2c683.313%2c-592.094C558.566%2c-705.703%2c358.333%2c-630.157%2c190.723%2c-649.543C56.451%2c-665.073%2c-73.842%2c-731.22%2c-203.988%2c-694.721C-334.777%2c-658.041%2c-422.291%2c-544.996%2c-519.685%2c-450.31C-626.324%2c-346.636%2c-752.168%2c-255.805%2c-800.232%2c-115.056C-852.946%2c39.311%2c-873.555%2c219.876%2c-797.892%2c364.385C-723.008%2c507.406%2c-544.162%2c548.133%2c-407.772%2c634.506C-272.469%2c720.19%2c-158.322%2c845.532%2c0%2c869.672' fill='%23091b2e'%3e%3c/path%3e%3cpath d='M1920 1905.074C2072.697 1902.109 2187.0969999999998 1776.964 2322.464 1706.246 2473.864 1627.152 2684.9049999999997 1616.92 2762.683 1464.84 2840.284 1313.105 2731.241 1135.397 2700.107 967.838 2670.419 808.059 2673.691 640.115 2584.234 504.438 2488.066 358.582 2352.217 227.82000000000005 2183.152 183.78499999999997 2015.76 140.18600000000004 1831.778 182.91099999999994 1681.998 269.43899999999996 1547.18 347.32399999999996 1506.046 515.292 1404.7069999999999 633.496 1304.1109999999999 750.8330000000001 1118.6660000000002 808.815 1089.461 960.587 1060.272 1112.275 1186.5439999999999 1245.599 1260.862 1381.018 1329.743 1506.529 1395.299 1632.973 1507.365 1722.0729999999999 1627.576 1817.6480000000001 1766.454 1908.056 1920 1905.074' fill='%23133960'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1066'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.form-container{
+  width: 50%;
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 100%;
+  border-top-right-radius: 30px ;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.blank{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+ margin-right: 50px;
+ width: 350px;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.form-row{
+  padding-bottom: 20px;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+label{
+  font-weight: 500;
+}
+
+.newPass{
+  width: 16px; 
+  height: 16px; 
+  margin-top: 10px; 
+  margin-left: -26px; 
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}

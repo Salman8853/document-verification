@@ -1,0 +1,14 @@
+<app-loader></app-loader>
+<router-outlet></router-outlet>
+<kendo-dialog title="You have been idle" *ngIf="islogoutAlert" (close)="stayConfirmationAlert()" [minWidth]="150"
+    [width]="345">
+    <div class="rows">
+        <div class="cols strong col-1x" id="timer">
+            <h3>You will be logged out in {{countdown}} seconds!</h3>
+        </div>
+    </div>
+    <kendo-dialog-actions [layout]="'normal'">
+        <!-- <button kendoButton (click)="logoutConfirmationAlert()" icon="x">Logout</button> -->
+        <button kendoButton (click)="stayConfirmationAlert()" icon="x">Cancel</button>
+    </kendo-dialog-actions>
+</kendo-dialog>

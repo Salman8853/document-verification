@@ -1,0 +1,262 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2d2d2e;
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1rem !important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 6px solid rgba(0, 0, 0, 0.18);
+  border-left: 0;
+  border-right: 0;
+  background-color: #007bff;
+}
+
+
+.k-card-header{
+  background: #004d94;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+  font-weight: 500;
+}
+
+.k-floating-label-container{
+  font-weight: 500;
+
+}
+
+.k-card{
+  font-size: 1.2rem;
+}
+button{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.link-text{
+  color: #007bff;
+  cursor: pointer;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+input{
+  font-weight: 300 !important ;
+  font-size: 1.2rem  !important;
+  line-height: 2.4rem !important;
+}
+.card-container{
+  display: flex;
+  justify-content: space-around;
+}
+.parent-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px 0 !important; */
+}
+.text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width:145px;
+}
+.k-card-header {
+  border-color: rgba(0, 0, 0, 0.08);
+  color: #fff;
+}
+
+.k-label{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+th{
+  font-weight: 500 !important;
+  background: #004d94;
+  color: #fff;
+  text-transform: uppercase;
+}
+.k-form .k-label,
+.k-form kendo-label,
+.k-form .k-form-label {
+  margin-bottom: 2px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.col-1x {
+  flex: 1;
+}
+.col-2x {
+  flex: 2;
+}
+.col-3x {
+  flex: 3;
+}
+.col-4x {
+  flex: 4;
+}
+
+/* Question Builder globle style */
+/* .question-docs .k-treeview-leaf-text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  margin: 2px 0;
+} */
+.question-docs .k-treeview-item .k-treeview-leaf-text{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 220px;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    margin: 2px 0;
+}
+.question-docs .k-treeview-leaf-text span{
+  width: inherit;
+}
+.flex{
+  display: flex;
+}
+.flex-align-center{
+  align-items: center !important;
+}
+.flex-align-end{
+  align-items: end !important;
+}
+.flex-justify-center{
+  justify-content: center !important;
+}
+.m-0{
+  margin: 0 !important;
+}
+/* /END */
+
+.required{
+  color: red;
+  margin-top: -2.8px;
+}
+
+.searchbtn{
+ text-align: right;
+ border: 1px solid #ccc;
+ background-color: #f2f2f2;
+ padding: 5px;
+ box-sizing: border-box;
+ border-radius: 3px;
+}
+
+.menu_panel .k-panelbar {
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1.4285714286;
+  list-style: none;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.k-button-md {
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 2.4rem;
+}
+
+.searchbox{
+  border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: -8px -8px -8px -8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 10px #c6c5c5;
+}
+
+td{
+  font-size: 1.2rem;
+}
+th{
+  font-size: 1.2rem;
+}
+
+.excel-btn{
+  flex: 1 1 50px;
+  text-align-last: end;
+}
+
+.excel-row{
+  width: 100% !important;
+  display: grid !important;;
+   grid-template-columns: 7fr 1fr !important;
+}
+
+.excel-col2{
+  flex: 1 2 800px;
+  margin-right: 5px;
+}
+.gridSearch{
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 5fr 1fr;
+
+}
+.driver-file-defination th:nth-child(1){
+  padding-left: 10px !important;
+  text-align: center;
+}
+.driver-file-defination tr td:nth-child(1){
+  text-align: center;
+}
+.resize{
+  left: 0px !important;
+  top: 0px !important;
+}
+.k-window-title{
+  font-weight: 500 !important;
+}

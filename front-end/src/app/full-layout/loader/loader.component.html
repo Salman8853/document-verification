@@ -1,0 +1,17 @@
+<div class="loading" *ngIf="loading">
+  <img src="assets/images/loader_fadv.svg"class="loading-image"/>
+</div>
+<div class="progress-error" *ngIf="showError">
+
+  <div class="k-fab-error alert-error load-error">
+    <div style="text-align: right;">
+      <span class="k-icon k-i-x" (click)="closeErrorDialog('cancel')" style="cursor: pointer;"></span>
+
+</div>
+
+      <h1>Error Code: {{errorStatus.status}}</h1>
+      <p>{{errorStatus.message}}</p>
+      <hr>
+      <p>Please refresh this page again.</p>
+   </div>
+</div>

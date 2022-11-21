@@ -1,0 +1,4 @@
+.envrc
+*.exe
+tmp
+.vscode

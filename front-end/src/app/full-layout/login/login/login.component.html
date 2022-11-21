@@ -1,0 +1,86 @@
+<div class="login-container">
+  <div class="form-container">
+    <div class="content">
+      <div
+        class="form-row"
+        style="border-bottom: 1px solid #f2f2f2; margin-bottom: 20px"
+      >
+        <div>
+          <!-- <img src="../assets/logo_color.svg" width="250px" /> -->
+          <h1>Document Verification</h1>
+        </div>
+      </div>
+      <h1 style="font-weight: 800">Sign in</h1>
+      <div class="form-row">
+        <!-- <div>Driver Qualifications Files</div> -->
+      </div>
+      <div></div>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div>
+            <div><label for="email">Email Address <span class="k-text-error">*</span></label></div>
+            <div>
+              <input
+              kendoTextBox
+              type="email"
+              [style.width.px]="350"
+              required
+              name="email"
+              id="email"
+              formControlName="email"
+              showErrorIcon="initial"
+            />
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <div><label for="password">Password <span class="k-text-error">*</span></label></div>
+            <kendo-textbox
+              [style.width.px]="350"
+              required
+              name="password"
+              formControlName="password"
+              id="password"
+              #password
+            ></kendo-textbox>
+            <img class="newPass" *ngIf="!showPassword"(click)="toggleVisibility()" src="/assets/images/open-eye.png" />
+            <img  class="newPass" *ngIf="showPassword"(click)="toggleVisibility()" src="/assets/images/close-eye.png" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+             <input type="checkbox" [disabled]="!loginForm.valid" #rememberMe kendoCheckBox (change) ="saveUser($event)"/>
+            <strong class="k-ml-2">Remember me</strong>
+          </div>
+          <div>
+            <strong><span class="link-text">Forgot password?</span></strong>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <button
+              kendoButton
+              type="submit"
+              [size]="'large'"
+              [rounded]="'full'"
+              [fillMode]="'solid'"
+              [themeColor]="'primary'"
+              [disabled]="!loginForm.valid"
+              style="
+                width: 350px;
+                font-size: 1.2rem;
+                padding: 10px;
+              "
+            >
+              sign in
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="blank">
+    <img src="../assets/login.svg" width="100%" />
+  </div>
+</div>
